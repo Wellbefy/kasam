@@ -82,7 +82,6 @@ class First extends Component{
                 </View>
 
                 <Text style={{fontSize:20, bottom:200}}>
-                    done {this.slidingComplete(this.sliderOptions[this.refs.slider.state.item].value)}
                 </Text>
 
             </View>

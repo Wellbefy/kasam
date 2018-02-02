@@ -16,14 +16,11 @@ class result extends Component{
                         this.props.navigation.navigate('First')}>
                     <Image
                         style={{width:170, height:50, alignItems:'center', justifyContent:'center', right:110}}
-                        source={require('/Users/Mido/kasam1/kasamPro/img/start.png')}
+                        source={require('/Users/Mido/kasam1/kasamPro/img/start-again.png')}
 
                     />
                 </TouchableHighlight>
-
-                <Text style={{fontSize:20, bottom:150}}>
-                    hello
-                </Text>
+                
             </View>
         )
     }
