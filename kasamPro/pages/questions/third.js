@@ -6,6 +6,7 @@ import {
     View,
     TouchableHighlight,
     Image,
+    TouchableOpacity
 } from 'react-native';
 
 class third extends Component{
@@ -26,10 +27,13 @@ class third extends Component{
     }
     getInitialState() {
         return {
-            defaultItem: 0
+            defaultItem: 0,
+            currentItem: 0
         };
     }
     slidingComplete(itemSelected) {
+
+        this.setState({ currentItem : itemSelected })
         console.log("slidingComplete");
         console.log("item selected " + this.refs.slider.state.item);
         console.log("item selected(from callback)" + itemSelected);
@@ -37,52 +41,57 @@ class third extends Component{
     }
 
     render() {
-        return (
-            <View style={styles.container}>
-                <View>
-                    <View style={styles.rectangle}>
-                        <Text style={styles.welcome}>
-                            3. Tänk på de människor du kommer i kontakt med dagligen, bortsett från dem som står dig närmast.
-                            Hur väl känner du de flesta av dem ?
-                        </Text>
-                    </View>
-                </View>
-
-                <SnapSlider
-                    ref="slider" containerStyle={styles.snapsliderContainer} style={styles.snapslider}
-                    itemWrapperStyle={styles.snapsliderItemWrapper}
-                    itemStyle={styles.snapsliderItem}
-                    items={this.sliderOptions}
-                    labelPosition="bottom"
-                    defaultItem={this.state.defaultItem}
-                    onSlidingComplete={this.slidingComplete}
-                    minimumTrackTintColor='#006064'
-                    step={0.2}
-
-                />
-
-                <View>
-                    <TouchableHighlight
-                        style={styles.touch1}
-                        onPress={() =>
-                            this.props.navigation.navigate('four')}>
-                        <Image
-                            style={{width:150, height:50}}
-                            source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
-
-                    </TouchableHighlight>
-
-                    <TouchableHighlight
-                        style={styles.touch2}
-                        onPress={() =>
-                            this.props.navigation.navigate('two')}>
-                        <Image
-                            style={{width:150, height:50}}
-                            source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
-                    </TouchableHighlight>
+        const { currentItem } = this.state;
+        return <View style={styles.container}>
+            <View>
+                <View style={styles.rectangle}>
+                    <Text style={styles.welcome}>
+                        3. Tänk på de människor du kommer i kontakt med dagligen, bortsett från dem som står dig närmast.
+                        Hur väl känner du de flesta av dem ?
+                    </Text>
                 </View>
             </View>
-        );
+
+            <SnapSlider
+                ref="slider" containerStyle={styles.snapsliderContainer} style={styles.snapslider}
+                itemWrapperStyle={styles.snapsliderItemWrapper}
+                itemStyle={styles.snapsliderItem}
+                items={this.sliderOptions}
+                labelPosition="bottom"
+                defaultItem={this.state.defaultItem}
+                onSlidingComplete={this.slidingComplete}
+                minimumTrackTintColor='#006064'
+                step={0.2}
+
+            />
+
+            <View>
+                <TouchableOpacity
+                    style={styles.touch1}
+                    onPress={() =>
+                        this.props.navigation.navigate('four')}>
+                    <Image
+                        style={{width: 150, height: 50}}
+                        source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.touch2}
+                    onPress={() =>
+                        this.props.navigation.navigate('two')}>
+                    <Image
+                        style={{width: 150, height: 50}}
+                        source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
+                </TouchableOpacity>
+            </View>
+
+            <Text style={styles.choice}>
+                { this.sliderOptions[currentItem].value === 1 ? 'tycker dom är främlingar' : ' ' &&
+                this.sliderOptions[currentItem].value === 6 ? 'känner dem mycket väl' : ' ' }
+            </Text>
+
+        </View>;
     }
 }
 
@@ -145,6 +154,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         right:90,
         borderStyle:'dashed',
+    }  ,
+    choice: {
+        fontSize: 20,
+        fontFamily:'Times New Roman',
+        bottom:180,
+        fontWeight:'bold',
+        textAlign:'center'
     }
 });
 export default third;

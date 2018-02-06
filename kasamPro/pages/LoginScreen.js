@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableHighlight, Image} from 'react-native';
+import {View, Text, TouchableHighlight, Image,TouchableOpacity} from 'react-native';
 
 class LoginScreen extends Component{
     render(){
         return(
             <View style={{backgroundColor:'#e0f7fa', alignItems:'center',flex:1, justifyContent:'space-around'}}>
                 <Text style={{fontSize:35,justifyContent:'center',alignItems:'center',lineHeight:75, color:'#000000',fontFamily:'Times New Roman'}}> Welcome to KASAM!</Text>
-                <TouchableHighlight
+                <TouchableOpacity
                     style={{ padding:20,
                         alignItems:'center',
                         left:105,
@@ -19,7 +19,7 @@ class LoginScreen extends Component{
                         source={require('/Users/Mido/kasam1/kasamPro/img/start.png')}
 
                     />
-                </TouchableHighlight>
+                </TouchableOpacity>
             </View>
         )
     }

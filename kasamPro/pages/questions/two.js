@@ -6,6 +6,7 @@ import {
     View,
     TouchableHighlight,
     Image,
+    TouchableOpacity
 } from 'react-native';
 
 class two extends Component{
@@ -26,10 +27,13 @@ class two extends Component{
     }
     getInitialState() {
         return {
-            defaultItem: 0
+            defaultItem: 0,
+            currentItem: 0
         };
     }
     slidingComplete(itemSelected) {
+
+        this.setState({ currentItem : itemSelected })
         console.log("slidingComplete");
         console.log("item selected " + this.refs.slider.state.item);
         console.log("item selected(from callback)" + itemSelected);
@@ -37,53 +41,59 @@ class two extends Component{
     }
 
     render() {
-        return (
-            <View style={styles.container}>
-                <View>
-                    <View style={styles.rectangle}>
-                        <Text style={styles.welcome}>
-                            2. När du har varit tvungen att göra någonting som krävde samarbete med andra, hade
-                            du då en känsla av att det ?
-                        </Text>
-                    </View>
+        const { currentItem } = this.state;
+        return <View style={styles.container}>
+            <View>
+                <View style={styles.rectangle}>
+                    <Text style={styles.welcome}>
+                        2. När du har varit tvungen att göra någonting som krävde samarbete med andra, hade
+                        du då en känsla av att det ?
+                    </Text>
                 </View>
-
-                <SnapSlider
-                    ref="slider" containerStyle={styles.snapsliderContainer} style={styles.snapslider}
-                    itemWrapperStyle={styles.snapsliderItemWrapper}
-                    itemStyle={styles.snapsliderItem}
-                    items={this.sliderOptions}
-                    labelPosition="bottom"
-                    defaultItem={this.state.defaultItem}
-                    onSlidingComplete={this.slidingComplete}
-                    minimumTrackTintColor='#006064'
-                    step={0.2}
-
-                />
-
-                <View>
-                    <TouchableHighlight
-                        style={styles.touch1}
-                        onPress={() =>
-                            this.props.navigation.navigate('third')}>
-                        <Image
-                            style={{width:150, height:50}}
-                            source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
-
-                    </TouchableHighlight>
-
-                    <TouchableHighlight
-                        style={styles.touch2}
-                        onPress={() =>
-                            this.props.navigation.navigate('First')}>
-                        <Image
-                            style={{width:150, height:50}}
-                            source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
-                    </TouchableHighlight>
-                </View>
-
             </View>
-        );
+
+            <SnapSlider
+                ref="slider" containerStyle={styles.snapsliderContainer} style={styles.snapslider}
+                itemWrapperStyle={styles.snapsliderItemWrapper}
+                itemStyle={styles.snapsliderItem}
+                items={this.sliderOptions}
+                labelPosition="bottom"
+                defaultItem={this.state.defaultItem}
+                onSlidingComplete={this.slidingComplete}
+                minimumTrackTintColor='#006064'
+                step={0.2}
+
+            />
+
+            <View>
+                <TouchableOpacity
+                    style={styles.touch1}
+                    onPress={() =>
+                        this.props.navigation.navigate('third')}>
+                    <Image
+                        style={{width: 150, height: 50}}
+                        source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
+
+                </TouchableOpacity>
+
+                <TouchableHighlight
+                    style={styles.touch2}
+                    onPress={() =>
+                        this.props.navigation.navigate('First')}>
+                    <Image
+                        style={{width: 150, height: 50}}
+                        source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
+                </TouchableHighlight>
+            </View>
+
+            <Text style={styles.choice}>
+                { this.sliderOptions[currentItem].value === 1 ? 'kommer säkert inte att bli gjort' : ' ' &&
+                this.sliderOptions[currentItem].value === 6 ? ' kommer säkert att bli gjort' : ' ' }
+            </Text>
+
+            <Text/>
+
+        </View>;
     }
 }
 
@@ -99,7 +109,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         margin: 10,
         alignItems:'center',
-        bottom:-50,
+        bottom:-70,
         fontFamily:'Times New Roman',
         fontWeight:'bold'
     },
@@ -146,6 +156,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         right:90,
         borderStyle:'dashed',
+    }  ,
+    choice: {
+        fontSize: 20,
+        fontFamily:'Times New Roman',
+        bottom:180,
+        fontWeight:'bold',
+        textAlign:'center'
     }
 });
 export default two;

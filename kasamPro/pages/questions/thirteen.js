@@ -9,7 +9,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 
-class First extends Component{
+class thirteen extends Component{
     sliderOptions = [
         {value: 1, label: '1'},
         {value: 2, label: '2'},
@@ -32,6 +32,7 @@ class First extends Component{
         };
     }
     slidingComplete(itemSelected) {
+
         this.setState({ currentItem : itemSelected })
         console.log("slidingComplete");
         console.log("item selected " + this.refs.slider.state.item);
@@ -45,7 +46,8 @@ class First extends Component{
             <View>
                 <View style={styles.rectangle}>
                     <Text style={styles.welcome}>
-                        1. När du talar med människor, har du då en känsla av att de inte förstår dig ?
+                        13. Vilket påstående beskriver bäst
+                        hur du ser på livet ?
                     </Text>
                 </View>
             </View>
@@ -67,7 +69,7 @@ class First extends Component{
                 <TouchableOpacity
                     style={styles.touch1}
                     onPress={() =>
-                        this.props.navigation.navigate('two')}>
+                        this.props.navigation.navigate('fourteen')}>
                     <Image
                         style={{width: 150, height: 50}}
                         source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
@@ -77,7 +79,7 @@ class First extends Component{
                 <TouchableOpacity
                     style={styles.touch2}
                     onPress={() =>
-                        this.props.navigation.navigate('LoginScreen')}>
+                        this.props.navigation.navigate('twelve')}>
                     <Image
                         style={{width: 150, height: 50}}
                         source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
@@ -85,11 +87,11 @@ class First extends Component{
             </View>
 
             <Text style={styles.choice}>
-                { this.sliderOptions[currentItem].value === 1 ? 'Har aldrig den känslan ' : ' ' &&
-                  this.sliderOptions[currentItem].value === 6 ? 'Har alltid den känslan' : ' ' }
+                { this.sliderOptions[currentItem].value === 1 ? 'det går alltid att finna en lösning på livets svårigheter' : ' ' &&
+                this.sliderOptions[currentItem].value === 6 ? 'det finns ingen lösning på livets svårigheter' : ' ' }
             </Text>
 
-        </View>
+        </View>;
     }
 }
 
@@ -161,4 +163,4 @@ const styles = StyleSheet.create({
         textAlign:'center'
     }
 });
-export default First;
+export default thirteen;
