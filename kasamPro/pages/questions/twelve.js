@@ -43,12 +43,10 @@ class twelve extends Component{
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
-            <View>
                 <View style={styles.rectangle}>
                     <Text style={styles.welcome}>
-                        12. Har du en känsla av att du befinner dig i en obekant situation och inte vet vad du ska göra ?
+                        12. Min medvetenhet kring organisationens övergripande mål är ...
                     </Text>
-                </View>
             </View>
 
             <SnapSlider
@@ -65,29 +63,21 @@ class twelve extends Component{
             />
 
             <View>
-                <TouchableOpacity
-                    style={styles.touch1}
-                    onPress={() =>
-                        this.props.navigation.navigate('thirteen')}>
-                    <Image
-                        style={{width: 150, height: 50}}
-                        source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.touch2}
-                    onPress={() =>
-                        this.props.navigation.navigate('eleven')}>
-                    <Image
-                        style={{width: 150, height: 50}}
-                        source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
-                </TouchableOpacity>
+                <TouchableHighlight
+                    onPress={() => this.props.navigation.navigate('result')}
+                    underlayColor='transparent'
+                >
+                    <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                        <Text style={styles.next}>
+                            NEXT
+                        </Text>
+                    </View>
+                </TouchableHighlight>
             </View>
 
             <Text style={styles.choice}>
-                { this.sliderOptions[currentItem].value === 1 ? 'mycket ofta' : ' ' &&
-                this.sliderOptions[currentItem].value === 6 ? 'mycket sällan/aldrig' : ' ' }
+                { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
+                  this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
             </Text>
 
         </View>;
@@ -99,35 +89,37 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#e0f7fa'
+        backgroundColor: '#aed581'
     },
     welcome: {
         fontSize: 27,
-        textAlign: 'center',
         margin: 10,
-        alignItems:'center',
-        bottom:-50,
+        bottom:-40,
         fontFamily:'Times New Roman',
-        fontWeight:'bold'
+        fontWeight:'bold',
+        textAlign:'center'
     },
     rectangle:{
         width: 180 * 2,
         height: 340,
         top:10,
-        backgroundColor:'#aec4c7',
+        backgroundColor:'#e1ffb1',
         borderWidth:1,
         borderStyle:'solid',
         borderBottomColor:'#aaa',
         borderRightColor:'#aaa',
         borderTopColor:'#ddd',
         borderLeftColor:'#ddd',
-        borderRadius:3
+        borderRadius:3,
+        position:'relative',
+        flex:50
     },
     snapsliderContainer: {
         borderWidth: 0,
         backgroundColor: 'transparent',
-        margin:25,
-        bottom:90
+        margin:35,
+        bottom:120,
+        flex:0
     },
     snapslider: {
         borderWidth: 0
@@ -138,26 +130,17 @@ const styles = StyleSheet.create({
     snapsliderItem: {
         borderWidth: 0
     },
-    touch1: {
-        padding:20,
-        bottom:-45,
-        backgroundColor:'#DDDDDD',
-        alignItems:'center',
-        left:90,
-        borderStyle:'dashed'
+    next: {
+        color: 'white',
+        padding: 20,
+        fontSize: 25,
+        textAlign:'center',
+        fontWeight:'bold'
     },
-    touch2:{
-        padding:20,
-        bottom:45,
-        backgroundColor:'#DDDDDD',
-        alignItems:'center',
-        right:90,
-        borderStyle:'dashed',
-    }  ,
     choice: {
         fontSize: 20,
         fontFamily:'Times New Roman',
-        bottom:180,
+        bottom:120,
         fontWeight:'bold',
         textAlign:'center'
     }

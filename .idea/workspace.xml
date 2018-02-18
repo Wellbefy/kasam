@@ -2,39 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885a273d-0502-44e5-b88d-f65fc55feec7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/eight.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/eighteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/eleven.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/fifteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/fourteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/nine.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/nineteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/seven.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/seventeen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/six.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/sixteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/ten.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/thirteen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twelve.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twenty.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentyeight.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentyfive.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentyfour.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentynine.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentyone.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentyseven.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentysix.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentythree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twentytwo.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/kasamPro/App.js" afterPath="$PROJECT_DIR$/kasamPro/App.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/android/build.gradle" afterPath="$PROJECT_DIR$/kasamPro/android/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/android/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/kasamPro/android/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/ios/kasamPro.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/kasamPro/ios/kasamPro.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/ios/kasamPro/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/kasamPro/ios/kasamPro/Images.xcassets/AppIcon.appiconset/Contents.json" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/package.json" afterPath="$PROJECT_DIR$/kasamPro/package.json" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/LoginScreen.js" afterPath="$PROJECT_DIR$/kasamPro/pages/LoginScreen.js" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/First.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/First.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/eight.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/eight.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/eighteen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/eleven.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/eleven.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/fifteen.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/five.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/five.js" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/four.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/four.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/fourteen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/nine.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/nine.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/nineteen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/seven.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/seven.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/seventeen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/six.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/six.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/sixteen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/ten.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/ten.js" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/third.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/third.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/thirteen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twelve.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/twelve.js" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twenty.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentyeight.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentyfive.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentyfour.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentynine.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentyone.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentyseven.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentysix.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentythree.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/twentytwo.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/kasamPro/pages/questions/two.js" afterPath="$PROJECT_DIR$/kasamPro/pages/questions/two.js" />
-      <change beforePath="$PROJECT_DIR$/kasamPro/pages/result.js" afterPath="$PROJECT_DIR$/kasamPro/pages/result.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,54 +52,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="twentyfive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyfive.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="First.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/First.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+            <state relative-caret-position="272">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twentyfour.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyfour.js">
+      <file leaf-file-name="LoginScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/LoginScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="29">
+              <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twentyseven.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyseven.js">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twentynine.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentynine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+            <state relative-caret-position="528">
+              <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/result.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="five.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/five.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="six.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/six.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="two.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/two.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="third.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/third.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ten.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/ten.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1407">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="four.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/four.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="121" column="20" lean-forward="false" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,28 +170,14 @@
         <option value="$PROJECT_DIR$/kasamPro/pages/Homescreen.js" />
         <option value="$PROJECT_DIR$/kasamPro/index.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/Home.js" />
-        <option value="$PROJECT_DIR$/kasamPro/package.json" />
-        <option value="$PROJECT_DIR$/kasamPro/App.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/result.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/LoginScreen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/two.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/four.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/eight.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/eighteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/eleven.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/fifteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/five.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/fourteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/nine.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/nineteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/seven.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/seventeen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/six.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/sixteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/ten.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/third.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/thirteen.js" />
-        <option value="$PROJECT_DIR$/kasamPro/pages/questions/twelve.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twenty.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twentyeight.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twentyfive.js" />
@@ -146,7 +188,21 @@
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twentysix.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twentythree.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/twentytwo.js" />
+        <option value="$PROJECT_DIR$/kasamPro/package.json" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/seven.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/eight.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/nine.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/eleven.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/twelve.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/ten.js" />
         <option value="$PROJECT_DIR$/kasamPro/pages/questions/First.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/two.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/third.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/five.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/six.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/questions/four.js" />
+        <option value="$PROJECT_DIR$/kasamPro/pages/LoginScreen.js" />
+        <option value="$PROJECT_DIR$/kasamPro/App.js" />
       </list>
     </option>
   </component>
@@ -183,8 +239,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,12 +323,15 @@
       <workItem from="1516917170037" duration="75000" />
       <workItem from="1516918855144" duration="4090000" />
       <workItem from="1517567996477" duration="17312000" />
-      <workItem from="1517905131957" duration="3676000" />
+      <workItem from="1517905131957" duration="6946000" />
+      <workItem from="1518423432442" duration="1999000" />
+      <workItem from="1518685868787" duration="1185000" />
+      <workItem from="1518717699236" duration="7016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62952000" />
+    <option name="totallyTimeSpent" value="76422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="0" />
@@ -282,13 +341,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -305,7 +364,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -321,7 +382,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -330,9 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -340,7 +399,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -356,7 +417,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -365,9 +426,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -382,7 +441,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -390,9 +451,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -401,7 +460,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -410,9 +469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -427,9 +484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -438,7 +493,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,9 +502,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3537">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -465,57 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/two.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/LoginScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/eight.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -527,31 +528,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/eleven.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/fifteen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/five.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/four.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
@@ -567,23 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/nine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/nineteen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/seven.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
@@ -599,23 +560,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/six.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/sixteen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/third.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
@@ -627,16 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twelve.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -665,28 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyfour.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentynine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyseven.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -723,18 +640,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyfour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twentyseven.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/seven.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/eight.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="146" column="3" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="146" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/nine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/eleven.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="74" column="37" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="74" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/twelve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="108" column="33" lean-forward="false" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/two.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="107" column="17" lean-forward="false" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/six.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/four.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="121" column="20" lean-forward="false" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/five.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/third.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/ten.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-999">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="-1407">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasamPro/pages/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kasamPro/pages/questions/First.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+        <state relative-caret-position="272">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding />
         </state>
       </provider>

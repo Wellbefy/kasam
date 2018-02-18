@@ -40,16 +40,17 @@ class third extends Component{
         console.log("value " + this.sliderOptions[this.refs.slider.state.item].value);
     }
 
+    static navigationOptions = {
+        title: 'Question3',
+    };
+
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
-            <View>
                 <View style={styles.rectangle}>
                     <Text style={styles.welcome}>
-                        3. Tänk på de människor du kommer i kontakt med dagligen, bortsett från dem som står dig närmast.
-                        Hur väl känner du de flesta av dem ?
+                        3. Trivsel på arbetsplatsen upplever jag är ...
                     </Text>
-                </View>
             </View>
 
             <SnapSlider
@@ -66,29 +67,21 @@ class third extends Component{
             />
 
             <View>
-                <TouchableOpacity
-                    style={styles.touch1}
-                    onPress={() =>
-                        this.props.navigation.navigate('four')}>
-                    <Image
-                        style={{width: 150, height: 50}}
-                        source={require('/Users/Mido/kasam1/kasamPro/img/next.png')}/>
-
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.touch2}
-                    onPress={() =>
-                        this.props.navigation.navigate('two')}>
-                    <Image
-                        style={{width: 150, height: 50}}
-                        source={require('/Users/Mido/kasam1/kasamPro/img/back.png')}/>
-                </TouchableOpacity>
+                <TouchableHighlight
+                    onPress={() => this.props.navigation.navigate('four')}
+                    underlayColor='transparent'
+                >
+                    <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                        <Text style={styles.next}>
+                            NEXT
+                        </Text>
+                    </View>
+                </TouchableHighlight>
             </View>
 
             <Text style={styles.choice}>
-                { this.sliderOptions[currentItem].value === 1 ? 'tycker dom är främlingar' : ' ' &&
-                this.sliderOptions[currentItem].value === 6 ? 'känner dem mycket väl' : ' ' }
+                { this.sliderOptions[currentItem].value === 1 ? ' Mycket dålig' : ' ' &&
+                this.sliderOptions[currentItem].value === 6 ? 'Mycket bra' : ' ' }
             </Text>
 
         </View>;
@@ -100,35 +93,37 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#e0f7fa'
+        backgroundColor: '#aed581'
     },
     welcome: {
         fontSize: 27,
-        textAlign: 'center',
         margin: 10,
-        alignItems:'center',
-        bottom:-50,
+        bottom:-40,
         fontFamily:'Times New Roman',
-        fontWeight:'bold'
+        fontWeight:'bold',
+        textAlign:'center'
     },
     rectangle:{
-        width: 180 * 2,
+        width: 200 * 2,
         height: 340,
         top:10,
-        backgroundColor:'#aec4c7',
+        backgroundColor:'#e1ffb1',
         borderWidth:1,
         borderStyle:'solid',
         borderBottomColor:'#aaa',
         borderRightColor:'#aaa',
         borderTopColor:'#ddd',
         borderLeftColor:'#ddd',
-        borderRadius:3
+        borderRadius:3,
+        position:'relative',
+        flex:50
     },
     snapsliderContainer: {
         borderWidth: 0,
         backgroundColor: 'transparent',
-        margin:25,
-        bottom:90
+        margin:35,
+        bottom:120,
+        flex:0
     },
     snapslider: {
         borderWidth: 0
@@ -139,26 +134,17 @@ const styles = StyleSheet.create({
     snapsliderItem: {
         borderWidth: 0
     },
-    touch1: {
-        padding:20,
-        bottom:-45,
-        backgroundColor:'#DDDDDD',
-        alignItems:'center',
-        left:90,
-        borderStyle:'dashed'
+    next: {
+        color: 'white',
+        padding: 20,
+        fontSize: 25,
+        textAlign:'center',
+        fontWeight:'bold'
     },
-    touch2:{
-        padding:20,
-        bottom:45,
-        backgroundColor:'#DDDDDD',
-        alignItems:'center',
-        right:90,
-        borderStyle:'dashed',
-    }  ,
     choice: {
         fontSize: 20,
         fontFamily:'Times New Roman',
-        bottom:180,
+        bottom:120,
         fontWeight:'bold',
         textAlign:'center'
     }
