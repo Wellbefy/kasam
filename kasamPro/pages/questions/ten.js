@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         textAlign:'center'
     },
     rectangle:{
-        width: 180 * 2,
+        width: 200 * 2,
         height: 340,
         top:10,
         backgroundColor:'#e1ffb1',
