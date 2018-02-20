@@ -59,20 +59,34 @@ class eight extends Component{
                 onSlidingComplete={this.slidingComplete}
                 minimumTrackTintColor='#006064'
                 step={0.2}
-
             />
 
-            <View>
-                <TouchableHighlight
-                    onPress={() => this.props.navigation.navigate('nine')}
-                    underlayColor='transparent'
-                >
-                    <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
-                        <Text style={styles.next}>
-                            NEXT
-                        </Text>
-                    </View>
-                </TouchableHighlight>
+            <View style={{bottom:40}}>
+                <View style={{top:5}}>
+                    <TouchableHighlight
+                        onPress={() => this.props.navigation.navigate('nine')}
+                        underlayColor='transparent'
+                    >
+                        <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                            <Text style={styles.next}>
+                                Next
+                            </Text>
+                        </View>
+                    </TouchableHighlight>
+                </View>
+
+                <View style={{top:15}}>
+                    <TouchableHighlight
+                        onPress={() => this.props.navigation.goBack()}
+                        underlayColor='transparent'
+                    >
+                        <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                            <Text style={styles.next}>
+                                Back
+                            </Text>
+                        </View>
+                    </TouchableHighlight>
+                </View>
             </View>
 
             <Text style={styles.choice}>
@@ -87,7 +101,7 @@ class eight extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#aed581'
     },
@@ -110,16 +124,14 @@ const styles = StyleSheet.create({
         borderRightColor:'#aaa',
         borderTopColor:'#ddd',
         borderLeftColor:'#ddd',
-        borderRadius:3,
+        borderRadius:15,
         position:'relative',
-        flex:50
     },
     snapsliderContainer: {
         borderWidth: 0,
         backgroundColor: 'transparent',
-        margin:35,
-        bottom:120,
-        flex:0
+        margin:40,
+        bottom:120
     },
     snapslider: {
         borderWidth: 0
@@ -132,15 +144,15 @@ const styles = StyleSheet.create({
     },
     next: {
         color: 'white',
-        padding: 20,
-        fontSize: 25,
+        padding: 10,
+        fontSize: 20,
         textAlign:'center',
-        fontWeight:'bold'
+        fontWeight:'bold',
     },
     choice: {
         fontSize: 20,
         fontFamily:'Times New Roman',
-        bottom:120,
+        bottom:180,
         fontWeight:'bold',
         textAlign:'center'
     }

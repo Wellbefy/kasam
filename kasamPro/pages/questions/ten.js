@@ -62,17 +62,32 @@ class ten extends Component{
 
             />
 
-            <View>
-                <TouchableHighlight
-                    onPress={() => this.props.navigation.navigate('eleven')}
-                    underlayColor='transparent'
-                >
-                    <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
-                        <Text style={styles.next}>
-                            NEXT
-                        </Text>
-                    </View>
-                </TouchableHighlight>
+            <View style={{bottom:40}}>
+                <View style={{top:5}}>
+                    <TouchableHighlight
+                        onPress={() => this.props.navigation.navigate('eleven')}
+                        underlayColor='transparent'
+                    >
+                        <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                            <Text style={styles.next}>
+                                Next
+                            </Text>
+                        </View>
+                    </TouchableHighlight>
+                </View>
+
+                <View style={{top:15}}>
+                    <TouchableHighlight
+                        onPress={() => this.props.navigation.goBack()}
+                        underlayColor='transparent'
+                    >
+                        <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                            <Text style={styles.next}>
+                                Back
+                            </Text>
+                        </View>
+                    </TouchableHighlight>
+                </View>
             </View>
 
             <Text style={styles.choice}>
@@ -87,7 +102,7 @@ class ten extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#aed581'
     },
@@ -100,7 +115,7 @@ const styles = StyleSheet.create({
         textAlign:'center'
     },
     rectangle:{
-        width: 200 * 2,
+        width: 180 * 2,
         height: 340,
         top:10,
         backgroundColor:'#e1ffb1',
@@ -110,16 +125,14 @@ const styles = StyleSheet.create({
         borderRightColor:'#aaa',
         borderTopColor:'#ddd',
         borderLeftColor:'#ddd',
-        borderRadius:3,
+        borderRadius:15,
         position:'relative',
-        flex:50
     },
     snapsliderContainer: {
         borderWidth: 0,
         backgroundColor: 'transparent',
-        margin:35,
-        bottom:120,
-        flex:0
+        margin:40,
+        bottom:120
     },
     snapslider: {
         borderWidth: 0
@@ -132,16 +145,15 @@ const styles = StyleSheet.create({
     },
     next: {
         color: 'white',
-        padding: 20,
-        fontSize: 25,
+        padding: 10,
+        fontSize: 20,
         textAlign:'center',
-        fontWeight:'bold'
+        fontWeight:'bold',
     },
     choice: {
         fontSize: 20,
         fontFamily:'Times New Roman',
-        bottom:130,
-        fontWeight:'bold',
+        bottom:180,
         textAlign:'center'
     }
 });
