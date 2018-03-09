@@ -5,9 +5,10 @@ import {
     Text,
     View,
     TouchableHighlight,
-    Image,
-    TouchableOpacity
 } from 'react-native';
+
+import {Fonts} from "../Fonts";
+import {data} from "../store";
 
 class five extends Component{
     sliderOptions = [
@@ -38,6 +39,9 @@ class five extends Component{
         console.log("item selected " + this.refs.slider.state.item);
         console.log("item selected(from callback)" + itemSelected);
         console.log("value " + this.sliderOptions[this.refs.slider.state.item].value);
+        data[4] = this.sliderOptions[this.refs.slider.state.item].value ;
+        data.push() ;
+        console.log(data);
     }
 
     render() {
@@ -91,7 +95,7 @@ class five extends Component{
 
             <Text style={styles.choice}>
                 { this.sliderOptions[currentItem].value === 1 ? ' Helt obefintlig' : ' ' &&
-                this.sliderOptions[currentItem].value === 6 ? 'Mycket stor)' : ' ' }
+                this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
             </Text>
 
         </View>;
@@ -109,8 +113,7 @@ const styles = StyleSheet.create({
         fontSize: 27,
         margin: 10,
         bottom:-40,
-        fontFamily:'Times New Roman',
-        fontWeight:'bold',
+        fontFamily:Fonts.Montserrat,
         textAlign:'center'
     },
     rectangle:{
@@ -148,12 +151,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textAlign:'center',
         fontWeight:'bold',
+        fontFamily:Fonts.Montserrat
     },
     choice: {
         fontSize: 20,
-        fontFamily:'Times New Roman',
+        fontFamily:Fonts.Montserrat,
         bottom:180,
-        fontWeight:'bold',
         textAlign:'center'
     }
 });

@@ -8,6 +8,8 @@ import {
     Image,
     TouchableOpacity
 } from 'react-native';
+import {Fonts} from "../Fonts";
+import {data} from "../store";
 
 class third extends Component{
     sliderOptions = [
@@ -38,6 +40,9 @@ class third extends Component{
         console.log("item selected " + this.refs.slider.state.item);
         console.log("item selected(from callback)" + itemSelected);
         console.log("value " + this.sliderOptions[this.refs.slider.state.item].value);
+        data[2] = this.sliderOptions[this.refs.slider.state.item].value ;
+        data.push() ;
+        console.log(data);
     }
 
     static navigationOptions = {
@@ -114,8 +119,7 @@ const styles = StyleSheet.create({
         fontSize: 27,
         margin: 10,
         bottom:-40,
-        fontFamily:'Times New Roman',
-        fontWeight:'bold',
+        fontFamily:Fonts.Montserrat,
         textAlign:'center'
     },
     rectangle:{
@@ -153,12 +157,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textAlign:'center',
         fontWeight:'bold',
+        fontFamily:Fonts.Montserrat
     },
     choice: {
         fontSize: 20,
-        fontFamily:'Times New Roman',
+        fontFamily:Fonts.Montserrat,
         bottom:180,
-        fontWeight:'bold',
         textAlign:'center'
     }
 });
