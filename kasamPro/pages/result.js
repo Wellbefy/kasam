@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, TouchableHighlight,AsyncStorage} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity,AsyncStorage} from 'react-native';
 import {data} from "./store";
 import {Fonts} from "./Fonts";
-
+import Share from 'react-native-share';
 class result extends Component{
 
     constructor(props) {
         super(props)
     }
 
+    onOpen() {
+        console.log("OPEN")
 
+    }
+    static navigationOptions = {
+        headerLeft: null
+    };
 
     render(){
         AsyncStorage.getItem('valueInt', (error,value) => {
@@ -17,18 +23,31 @@ class result extends Component{
                 console.log(data)
             }
         });
+        let values = [data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]];
+        let sum = values.reduce((previous, current) => current += previous);
+        let avg = sum / values.length;
+
+        let shareOptions = {
+            title: "Kasam Test",
+            message: "Join Us",
+            url: "http://www.wellbefy.se/",
+            subject: "Wellbefy " ,
+        };
 
         return (
-            <View style={{backgroundColor:'#aed581', alignItems:'center',flex:1, justifyContent:'space-around'}}>
-                <View style={styles.rectangle}>
-                    <Text style={{fontSize:35,textAlign:'center', lineHeight:60,color:'#000000',fontFamily:Fonts.Montserrat}}>
-                        Your POINTS !
+            <View style={{backgroundColor:'white', alignItems:'center',flex:1, justifyContent:'space-around'}}>
+                <View>
+                    <Text style={{fontSize:25,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat}}>
+                        Din upplevda KASAM :
                     </Text>
                     <Text style={styles.point}>
                         {this.props.currentItem}
                     </Text>
-                    <Text style={{marginLeft:'auto',marginRight:'auto', fontSize:40,fontFamily:Fonts.Montserrat}}>
+                    <Text style={{marginLeft:'auto',marginRight:'auto', fontSize:40,fontFamily:Fonts.Montserrat, color:'#9BC661'}}>
                         {data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]}
+                    </Text>
+                    <Text style={{fontSize:15,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat, fontWeight:'bold'}}>
+                        genomsnittligt värde {avg}
                     </Text>
                 </View>
 
@@ -43,41 +62,29 @@ class result extends Component{
                         Begriplighet :  {data[8]+data[9]+data[10]+data[11]}
                     </Text>
                 </View>
-                <TouchableHighlight
-                    onPress={() => this.props.navigation.navigate('Home')}
-                    underlayColor='transparent'
-                >
-                    <View style={{backgroundColor: 'green', borderRadius:20, width:220}}>
+                <TouchableOpacity onPress={()=>{
+                    this.onOpen();
+                    setTimeout(() => {
+                        Share.open(shareOptions)
+                            .catch(err => console.log(err));
+                    },300);}}>
+                    <View style={{backgroundColor: '#9BC661', borderRadius:20, width:220}}>
                         <Text style={styles.next}>
-                            Start Again
+                            Share
                         </Text>
                     </View>
-                </TouchableHighlight>
+                </TouchableOpacity>
             </View>
         )
 
     }
 }
 const styles = StyleSheet.create({
-    rectangle:{
-        width: 170 * 2,
-        height: 200,
-        top:15,
-        backgroundColor:'#e1ffb1',
-        borderWidth:1,
-        borderStyle:'solid',
-        borderBottomColor:'#aaa',
-        borderRightColor:'#aaa',
-        borderTopColor:'#ddd',
-        borderLeftColor:'#ddd',
-        borderRadius:15,
-        position:'relative',
-    },
     rectangle2:{
         width: 170 * 2,
         height: 200,
         top:20,
-        backgroundColor:'#e1ffb1',
+        backgroundColor:'#9BC661',
         borderWidth:1,
         borderStyle:'solid',
         borderBottomColor:'#aaa',

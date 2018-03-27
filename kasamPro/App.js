@@ -38,51 +38,51 @@ const AppNavigator = StackNavigator({
             },
     First: {screen: First,
         navigationOptions: {
-            title: 'Question 1',}
+            title: 'Fråga 1',}
             },
     two: {screen: two,
         navigationOptions: {
-            title: 'Question 2',}
+            title: 'Fråga 2',}
             },
     third: {screen: third,
         navigationOptions: {
-            title: 'Question 3',}
+            title: 'Fråga 3',}
             },
     four: {screen: four,
         navigationOptions: {
-            title: 'Question 4',}
+            title: 'Fråga 4',}
             },
     five: {screen: five,
         navigationOptions: {
-            title: 'Question 5',}
+            title: 'Fråga 5',}
             },
     six: {screen: six,
         navigationOptions: {
-            title: 'Question 6',}
+            title: 'Fråga 6',}
             },
     seven: {screen: seven,
         navigationOptions: {
-            title: 'Question 7',}
+            title: 'Fråga 7',}
             },
     eight: {screen: eight,
         navigationOptions: {
-            title: 'Question 8',}
+            title: 'Fråga 8',}
             },
     nine: {screen: nine,
         navigationOptions: {
-            title: 'Question 9',}
+            title: 'Fråga 9',}
             },
     ten: {screen: ten,
         navigationOptions: {
-            title: 'Question 10',}
+            title: 'Fråga 10',}
             },
     eleven: {screen: eleven,
         navigationOptions: {
-            title: 'Question 11',}
+            title: 'Fråga 11',}
             },
     twelve: {screen: twelve,
         navigationOptions: {
-            title: 'Question 12',}
+            title: 'Fråga 12',}
             },
     result:{screen: result,
         navigationOptions: {
