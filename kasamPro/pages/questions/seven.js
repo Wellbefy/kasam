@@ -51,7 +51,7 @@ class seven extends Component{
         return <View style={styles.container}>
 
             <Text style={styles.question}>
-                1. När du talar med människor, har du då en känsla av att de inte förstår dig ?
+                7. Arbetsbelastningen känner jag är...
             </Text>
 
             <SnapSlider
@@ -68,8 +68,8 @@ class seven extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Har aldrig den känslan ' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Har alltid den känslan' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'Väldigt hög och obalanserad' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'Balanserad och fungerar utmärkt' : ' ' }
                 </Text>
             </View>
 

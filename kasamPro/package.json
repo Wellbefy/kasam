@@ -12,6 +12,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "firebase": "^4.12.1",
+    "npm": "^5.8.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-share": "^1.0.26",
