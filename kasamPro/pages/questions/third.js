@@ -49,10 +49,11 @@ class third extends Component{
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
-
+            <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
                 3. Trivsel på arbetsplatsen upplever jag är...
             </Text>
+            </View>
 
             <SnapSlider
                 ref="slider"

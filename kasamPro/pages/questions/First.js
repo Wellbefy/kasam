@@ -51,9 +51,11 @@ class First extends Component{
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
+            <View style={{height:180, flex:1}}>
             <Text style={styles.welcome}>
                 1. Jag upplever att min möjlighet att påverka är...
             </Text>
+            </View>
 
             <SnapSlider
                 ref="slider"

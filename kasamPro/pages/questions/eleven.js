@@ -50,9 +50,11 @@ class eleven extends Component{
         const { currentItem } = this.state;
         return <View style={styles.container}>
 
+            <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
                 11. Jag upplever att min feedback från mina utförda arbetsuppgifter är...
             </Text>
+            </View>
 
             <SnapSlider
                 ref="slider"

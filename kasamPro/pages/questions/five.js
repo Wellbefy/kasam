@@ -49,10 +49,11 @@ class five extends Component{
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
-
+            <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
                 5. Jag upplever att stödet från min närmsta chef är...
             </Text>
+            </View>
 
             <SnapSlider
                 ref="slider"

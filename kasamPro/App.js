@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import {
-    Platform,
-    StyleSheet,
-    Text,
-    View,Button
-} from 'react-native';
 
 import {StackNavigator} from 'react-navigation';
 import First from './pages/questions/First';
@@ -21,7 +15,7 @@ import ten from './pages/questions/ten';
 import eleven from './pages/questions/eleven';
 import twelve from './pages/questions/twelve';
 import result from './pages/result';
-
+import questions from "./pages/questions";
 
 export default class App extends React.Component{
     render(){
@@ -34,7 +28,7 @@ export default class App extends React.Component{
 const AppNavigator = StackNavigator({
     LoginScreen: {screen: LoginScreen ,
         navigationOptions: {
-            title: 'Home',}
+            title: 'Tillbaka',}
             },
     First: {screen: First,
         navigationOptions: {
@@ -84,9 +78,13 @@ const AppNavigator = StackNavigator({
         navigationOptions: {
             title: 'Fråga 12',}
             },
-    result:{screen: result,
+    result: {screen: result,
         navigationOptions: {
-            title: 'Results',}
-    }
+            title: 'Ditt resultat',}
+    },
+    questions: {screen: questions,
+    navigationOptions:{
+        title: 'Frågor'
+    }}
 
 })

@@ -3,12 +3,16 @@ import {
     View,
     Text,
     StyleSheet,
-    TouchableOpacity,
+    TouchableHighlight,
+    Alert,
+    CameraRoll,
+    Button
 } from 'react-native';
 import {data} from "./store";
 import {Fonts} from "./Fonts";
-import Share from 'react-native-share';
 import * as firebase from "firebase";
+import {captureScreen} from 'react-native-view-shot';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyBjYY8FxoZKku6GVcX1r8Qd6ETlh6XOyMU",
@@ -18,18 +22,36 @@ const firebaseConfig = {
     storageBucket: "kasam-8m9m2.appspot.com"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-rootRef = firebase.database().ref();
-var resultRef = rootRef.child('result');
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+    rootRef = firebase.database().ref();
+    var resultRef = rootRef.child('result');
 
 class result extends Component{
     constructor(props) {
-        super(props)
+        super(props);
         this.state ={
             allScore : '' ,
-            allUsers: ''
+            allUsers: '',
+            imageURI: null
         };
         this.getData = this.getData.bind(this);
+    }
+    capture() {
+        captureScreen({
+            format: "jpg",
+            quality: 0.8
+        })
+            .then(
+                uri => {
+                    console.log("Image saved to ", uri);
+                    let saveResult = CameraRoll.saveToCameraRoll(uri, 'photo');
+                    this.setState({ imageURI: saveResult });
+                }
+            )
+            .catch(error => console.log('error save: ', error));
+        if(this.state.imageURI != null){
+            Alert.alert('Bild sparat')
+        }
     }
     getData(dataa){
         var results = dataa.val();
@@ -56,64 +78,58 @@ class result extends Component{
         resultRef.on('value', this.getData);
     }
 
-    onOpen() {
-        console.log("OPEN")
-    }
-    static navigationOptions = {
-        title: 'Resultat',
-        headerLeft: null
-    };
+    static navigationOptions = ({navigation}) => {
+
+        return {
+            headerRight: (
+                <Button
+                    title = 'Home'
+                    onPress = {() => navigation.navigate('LoginScreen')}
+                    color= '#9BC661'
+                />
+            ),
+        }};
 
 render(){
-    let shareOptions = {
-            title: "Kasam Test",
-            message: "Join Us",
-            url: "http://www.wellbefy.se/",
-            subject: "Wellbefy " ,
-        };
     var done =  this.state.allScore /this.state.allUsers ;
-
         return (
             <View style={{backgroundColor:'white', alignItems:'center',flex:1, justifyContent:'space-around'}}>
                 <View>
                     <Text style={{fontSize:25,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat}}>
-                        Din upplevda KASAM :
+                        Din upplevda KASAM
                     </Text>
                     <Text style={{marginLeft:'auto',marginRight:'auto', fontSize:40,fontFamily:Fonts.Montserrat, color:'#9BC661'}}>
                         {data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]}
                     </Text>
-                    <Text style={{fontSize:15,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat, fontWeight:'bold'}}>
-                        genomsnittligt värde :
+                    <Text style={{fontSize:15,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat}}>
+                        Genomsnittligt värde
                     </Text>
                     <Text style={{fontSize:15,textAlign:'center', lineHeight:60,color:'black',
-                        fontFamily:Fonts.Montserrat, fontWeight:'bold'}}>
-                        {done}
+                        fontFamily:Fonts.Montserrat, bottom:30}}>
+                        {Math.ceil(done)}
                     </Text>
                 </View>
 
                 <View style={styles.rectangle2}>
                     <Text style={styles.point}>
-                        Meningsfullhet : {data[0]+data[1]+data[2]+data[3]}
+                        Meningsfullhet: {data[0]+data[1]+data[2]+data[3]}
                     </Text>
                     <Text style={styles.point}>
-                        Hanterbarhet :  {data[4]+data[5]+data[6]+data[7]}
+                        Hanterbarhet:  {data[4]+data[5]+data[6]+data[7]}
                     </Text>
                     <Text style={styles.point}>
-                        Begriplighet :  {data[8]+data[9]+data[10]+data[11]}
+                        Begriplighet:  {data[8]+data[9]+data[10]+data[11]}
                     </Text>
                 </View>
-                <TouchableOpacity onPress={()=>{
-                    this.onOpen();
-                    setTimeout(() => {
-                        Share.open(shareOptions)
-                            .catch(err => console.log(err));
-                    },300);}}>
+                <TouchableHighlight onPress={() => this.capture()}
+                                    underlayColor='transparent'
+                >
                     <View style={{backgroundColor: '#9BC661', borderRadius:20, width:220}}>
                         <Text style={styles.next}>
-                            Share
+                            Spara
                         </Text>
                     </View>
-                </TouchableOpacity>
+                </TouchableHighlight>
             </View>
         )
 
