@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, ScrollView, StyleSheet, Button} from 'react-native';
+import {Text, View, ScrollView, StyleSheet, TouchableOpacity} from 'react-native';
 import {Fonts} from "./Fonts";
 
 export default class questions extends Component{
@@ -8,11 +8,15 @@ export default class questions extends Component{
 
         return {
             headerRight: (
-                <Button
-                    title = 'Starta'
+                <TouchableOpacity
                     onPress = {() => navigation.navigate('First')}
-                    color= '#9BC661'
-                />
+                >
+                    <View style={{backgroundColor: '#FED34e',borderRadius:20, right:1.7}}>
+                        <Text style={styles.next}>
+                            Starta
+                        </Text>
+                    </View>
+                </TouchableOpacity>
             ),
         }};
 
@@ -90,5 +94,12 @@ const styles = StyleSheet.create({
         fontSize: 15,
         margin: 10,
         fontFamily:Fonts.Montserrat,
-    }
+    },
+    next: {
+        color: 'black',
+        padding: 10,
+        fontSize: 15,
+        textAlign:'center',
+        fontFamily:Fonts.Montserrat
+    },
 });

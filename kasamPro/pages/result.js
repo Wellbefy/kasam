@@ -6,7 +6,7 @@ import {
     TouchableHighlight,
     Alert,
     CameraRoll,
-    Button
+    TouchableOpacity,
 } from 'react-native';
 import {data} from "./store";
 import {Fonts} from "./Fonts";
@@ -44,14 +44,11 @@ class result extends Component{
             .then(
                 uri => {
                     console.log("Image saved to ", uri);
-                    let saveResult = CameraRoll.saveToCameraRoll(uri, 'photo');
+                    let saveResult = CameraRoll.saveToCameraRoll(uri, 'photo').then(Alert.alert('Bild sparad'));
                     this.setState({ imageURI: saveResult });
                 }
             )
             .catch(error => console.log('error save: ', error));
-        if(this.state.imageURI != null){
-            Alert.alert('Bild sparat')
-        }
     }
     getData(dataa){
         var results = dataa.val();
@@ -82,11 +79,15 @@ class result extends Component{
 
         return {
             headerRight: (
-                <Button
-                    title = 'Home'
+                <TouchableOpacity
                     onPress = {() => navigation.navigate('LoginScreen')}
-                    color= '#9BC661'
-                />
+                >
+                    <View style={{backgroundColor: '#9BC661',borderRadius:20}}>
+                        <Text style={styles.home}>
+                            Hem
+                        </Text>
+                    </View>
+                </TouchableOpacity>
             ),
         }};
 
@@ -139,7 +140,6 @@ const styles = StyleSheet.create({
     rectangle2:{
         width: 170 * 2,
         height: 200,
-        top:20,
         backgroundColor:'#9BC661',
         borderWidth:1,
         borderStyle:'solid',
@@ -163,6 +163,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textAlign:'center',
         fontWeight:'bold',
+        fontFamily:Fonts.Montserrat
+    },
+    home: {
+        color: 'black',
+        padding: 10,
+        fontSize: 15,
+        textAlign:'center',
         fontFamily:Fonts.Montserrat
     },
 

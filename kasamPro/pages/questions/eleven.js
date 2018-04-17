@@ -54,7 +54,6 @@ class eleven extends Component{
             <Text style={styles.question}>
                 11. Jag upplever att min feedback från mina utförda arbetsuppgifter är...
             </Text>
-            </View>
 
             <SnapSlider
                 ref="slider"
@@ -67,8 +66,9 @@ class eleven extends Component{
                 step={0.2}
                 thumbTintColor= 'green'
             />
+            </View>
 
-            <View style={{top: 50, flex:1}}>
+            <View style={{top: 125, flex:1}}>
                 <Text style={styles.choice}>
                     { this.sliderOptions[currentItem].value === 1 ? ' Helt obefintlig' : ' ' &&
                     this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }

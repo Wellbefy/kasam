@@ -69,7 +69,7 @@ class ten extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Väldigt dålig, hade behövt mer kunskap/verktyg' : ' ' &&
+                    { this.sliderOptions[currentItem].value === 1 ? 'Väldigt dålig, hade behövt mer \n kunskap/verktyg' : ' ' &&
                     this.sliderOptions[currentItem].value === 6 ? 'Mycket bra' : ' ' }
                 </Text>
             </View>

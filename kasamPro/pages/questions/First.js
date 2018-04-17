@@ -4,7 +4,8 @@ import {
     StyleSheet,
     Text,
     View,
-    TouchableOpacity
+    TouchableOpacity,
+    BackHandler,
       } from 'react-native';
 import {Fonts} from "../Fonts";
 import {data} from "../store";
@@ -42,11 +43,17 @@ class First extends Component{
         data.push() ;
         console.log(data);
     }
+    componentDidMount() {
+        BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+    }
 
-    static navigationOptions = {
-        title: 'Fråga 1',
-        headerLeft: null
-    };
+    componentWillUnmount() {
+        BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+    }
+
+    handleBackButton() {
+        return true;
+    }
 
     render() {
         const { currentItem } = this.state;

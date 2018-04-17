@@ -45,11 +45,10 @@ class twelve extends Component{
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
-            <View style={{height:180, flex:1}}>
+            <View style={{height:240, flex:1}}>
             <Text style={styles.question}>
-                12. Min medvetenhet kring organisationens övergripande mål är...
+                12.Min medvetenhet kring organisationens övergripande mål är...
             </Text>
-            </View>
 
             <SnapSlider
                 ref="slider"
@@ -62,8 +61,9 @@ class twelve extends Component{
                 step={0.2}
                 thumbTintColor= 'green'
             />
+            </View>
 
-            <View style={{top: 50, flex:1}}>
+            <View style={{top: 125, flex:1}}>
                 <Text style={styles.choice}>
                     { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
                     this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
