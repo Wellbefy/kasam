@@ -42,10 +42,6 @@ class third extends Component{
         console.log(data);
     }
 
-    static navigationOptions = {
-        title: 'Fråga 3',
-    };
-
     render() {
         const { currentItem } = this.state;
         return <View style={styles.container}>
@@ -75,7 +71,7 @@ class third extends Component{
             </View>
 
             <View style={{flex:1,bottom:25}}>
-                <View style={{top: 35,flex:1}}>
+                <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
                             this.props.navigation.navigate('four')}

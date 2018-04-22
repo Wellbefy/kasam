@@ -7,6 +7,8 @@ import {
     Alert,
     CameraRoll,
     TouchableOpacity,
+    Platform,
+    AlertIOS
 } from 'react-native';
 import {data} from "./store";
 import {Fonts} from "./Fonts";
@@ -44,8 +46,18 @@ class result extends Component{
             .then(
                 uri => {
                     console.log("Image saved to ", uri);
-                    let saveResult = CameraRoll.saveToCameraRoll(uri, 'photo').then(Alert.alert('Bild sparad'));
-                    this.setState({ imageURI: saveResult });
+                    let saveResult =    CameraRoll.saveToCameraRoll(uri, ('photo'));
+                    if (Platform.OS === 'ios' ) {
+                        setTimeout(() => {
+                            AlertIOS.alert('Bild sparad');
+                        }, 200);
+                    } else {
+                        Alert.alert('Bild sparad ')
+                    }
+
+
+                    this.setState({imageURI: saveResult});
+
                 }
             )
             .catch(error => console.log('error save: ', error));
@@ -54,7 +66,7 @@ class result extends Component{
         var results = dataa.val();
         var keys = Object.keys(results);
         var score = 0;
-        var count = 0
+        var count = 0;
         // console.log(keys);
         for(var i=0; i< keys.length; i++){
             var k = keys[i];

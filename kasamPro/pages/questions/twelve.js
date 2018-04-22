@@ -49,6 +49,7 @@ class twelve extends Component{
             <Text style={styles.question}>
                 12.Min medvetenhet kring organisationens övergripande mål är...
             </Text>
+            </View>
 
             <SnapSlider
                 ref="slider"
@@ -61,9 +62,8 @@ class twelve extends Component{
                 step={0.2}
                 thumbTintColor= 'green'
             />
-            </View>
 
-            <View style={{top: 125, flex:1}}>
+            <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
                     { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
                     this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
@@ -71,7 +71,7 @@ class twelve extends Component{
             </View>
 
             <View style={{flex:1,bottom:25}}>
-                <View style={{top: 35,flex:1}}>
+                <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
                             this.props.navigation.navigate('result')}
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 26,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat

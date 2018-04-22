@@ -75,7 +75,7 @@ class eight extends Component{
             </View>
 
             <View style={{flex:1,bottom:25}}>
-                <View style={{top: 35,flex:1}}>
+                <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
                             this.props.navigation.navigate('nine')}

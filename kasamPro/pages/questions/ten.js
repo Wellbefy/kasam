@@ -75,7 +75,7 @@ class ten extends Component{
             </View>
 
             <View style={{flex:1,bottom:25}}>
-                <View style={{top: 35,flex:1}}>
+                <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
                             this.props.navigation.navigate('eleven')}
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 27,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat

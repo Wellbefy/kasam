@@ -14,10 +14,12 @@ class LoginScreen extends Component{
 
     render(){
         return(
-            <View style={{backgroundColor:'white', alignItems:'center',flex:1, justifyContent:'center'}}>
+            <View style={{backgroundColor:'white',flex:1,alignItems:'center', justifyContent:'space-between'}}>
+                <View style={{top: 70}}>
                 <Text style={styles.welcome}> Vad har du för KASAM?</Text>
+                </View>
 
-                <View style={{top:75}}>
+                <View style={{bottom:75}}>
                 <TouchableOpacity
                     onPress={() => this.props.navigation.navigate('First')}
                     underlayColor='transparent'
@@ -28,10 +30,9 @@ class LoginScreen extends Component{
                         </Text>
                     </View>
                 </TouchableOpacity>
-                </View>
 
-                <View style={{top: 125}}>
-                <TouchableOpacity
+                <View style={{top:30}}>
+                    <TouchableOpacity
                     onPress={() => this.props.navigation.navigate('questions')}
                     underlayColor='transparent'
                 >
@@ -43,18 +44,17 @@ class LoginScreen extends Component{
                 </TouchableOpacity>
                 </View>
             </View>
+            </View>
         )
     }
 }
 const styles = StyleSheet.create({
     welcome:{
         fontSize:30,
-        justifyContent:'center',
-        alignItems:'center',
         lineHeight:75,
         color:'#000000',
         fontFamily:Fonts.Montserrat,
-        bottom: 75
+        textAlign:'center'
     },
     next: {
         color: 'white',
