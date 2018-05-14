@@ -11,12 +11,12 @@ import {data} from "../store";
 
 class five extends Component{
     sliderOptions = [
-        {value: 1, label: '1'},
-        {value: 2, label: '2'},
-        {value: 3, label: '3'},
-        {value: 4, label: '4'},
-        {value: 5, label: '5'},
-        {value: 6, label: '6',}
+        {value: 6, label: '1'},
+        {value: 5, label: '2'},
+        {value: 4, label: '3'},
+        {value: 3, label: '4'},
+        {value: 2, label: '5'},
+        {value: 1, label: '6',}
     ];
 
     constructor(props) {
@@ -47,7 +47,8 @@ class five extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                5. Jag upplever att stödet från min närmsta chef är...
+                5. Har det hänt att du blivit överraskad av beteendet hos personer som du trodde att du
+                kände väl ?
             </Text>
             </View>
 
@@ -65,8 +66,8 @@ class five extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor)' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'har aldrig hänt' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'har hänt ofta' : ' ' }
                 </Text>
             </View>
 
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 27,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat

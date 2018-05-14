@@ -11,12 +11,12 @@ import {data} from "../store";
 
 class eleven extends Component{
     sliderOptions = [
-        {value: 1, label: '1'},
-        {value: 2, label: '2'},
-        {value: 3, label: '3'},
-        {value: 4, label: '4'},
-        {value: 5, label: '5'},
-        {value: 6, label: '6',}
+        {value: 6, label: '1'},
+        {value: 5, label: '2'},
+        {value: 4, label: '3'},
+        {value: 3, label: '4'},
+        {value: 2, label: '5'},
+        {value: 1, label: '6',}
     ];
 
     constructor(props) {
@@ -52,7 +52,7 @@ class eleven extends Component{
 
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                11. Jag upplever att min feedback från mina utförda arbetsuppgifter är...
+                11. De flesta saker som du gör i framtiden kommer troligtvis att vara.
             </Text>
             </View>
 
@@ -70,8 +70,8 @@ class eleven extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? ' Helt obefintlig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'helt fascinerande' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'fullkomligt urtråkiga' : ' ' }
                 </Text>
             </View>
 

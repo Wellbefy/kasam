@@ -47,7 +47,8 @@ class two extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                2. Jag upplever att mitt dagliga arbete är...
+                2. När du har varit tvungen att göra någonting som krävde samarbete med andra, hade
+                du då en känsla av att det ?
             </Text>
             </View>
 
@@ -65,8 +66,8 @@ class two extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Helt meningslöst' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket meningsfullt' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'kommer säkert inte att bli gjort' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? ' kommer säkert att bli gjort' : ' ' }
                 </Text>
             </View>
 
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 25,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat

@@ -8,13 +8,14 @@ import {
     CameraRoll,
     TouchableOpacity,
     Platform,
-    AlertIOS
+    AlertIOS,
+    Dimensions
 } from 'react-native';
 import {data} from "./store";
 import {Fonts} from "./Fonts";
 import * as firebase from "firebase";
 import {captureScreen} from 'react-native-view-shot';
-
+var width = Dimensions.get('window').width;
 
 const firebaseConfig = {
     apiKey: "AIzaSyBjYY8FxoZKku6GVcX1r8Qd6ETlh6XOyMU",
@@ -81,7 +82,9 @@ class result extends Component{
     }
     componentWillMount(){
         resultRef.push({
-            score: (data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]),
+            score: (data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]+
+                data[12]+data[13]+data[14]+data[15]+data[16]+data[17]+data[18]+data[19]+data[20]+data[21]+data[22]+data[23]
+                +data[24]+data[25]+data[26]+data[27]+data[28]),
             count: (1)
         });
         resultRef.on('value', this.getData);
@@ -112,7 +115,9 @@ render(){
                         Din upplevda KASAM
                     </Text>
                     <Text style={{marginLeft:'auto',marginRight:'auto', fontSize:40,fontFamily:Fonts.Montserrat, color:'#9BC661'}}>
-                        {data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]}
+                        {data[0]+data[1]+data[2]+data[3]+data[4]+data[5]+data[6]+data[7]+data[8]+data[9]+data[10]+data[11]+
+                        data[12]+data[13]+data[14]+data[15]+data[16]+data[17]+data[18]+data[19]+data[20]+data[21]+data[22]+data[23]
+                        +data[24]+data[25]+data[26]+data[27]+data[28]}
                     </Text>
                     <Text style={{fontSize:15,textAlign:'center', lineHeight:60,color:'black',fontFamily:Fonts.Montserrat}}>
                         Genomsnittligt värde
@@ -125,13 +130,13 @@ render(){
 
                 <View style={styles.rectangle2}>
                     <Text style={styles.point}>
-                        Meningsfullhet: {data[0]+data[1]+data[2]+data[3]}
+                        Meningsfullhet: {data[3]+data[6]+data[7]+data[10]+data[13]+data[15]+data[21]+data[27]}
                     </Text>
                     <Text style={styles.point}>
-                        Hanterbarhet:  {data[4]+data[5]+data[6]+data[7]}
+                        Hanterbarhet:  {data[0]+data[4]+data[9]+data[11]+data[14]+data[16]+data[18]+data[20]+data[23]+data[25]}
                     </Text>
                     <Text style={styles.point}>
-                        Begriplighet:  {data[8]+data[9]+data[10]+data[11]}
+                        Begriplighet:  {data[1]+data[5]+data[8]+data[12]+data[17]+data[19]+data[22]+data[24]+data[26]+data[28]}
                     </Text>
                 </View>
                 <TouchableHighlight onPress={() => this.capture()}
@@ -150,7 +155,7 @@ render(){
 }
 const styles = StyleSheet.create({
     rectangle2:{
-        width: 170 * 2,
+        width: width - 25,
         height: 200,
         backgroundColor:'#9BC661',
         borderWidth:1,

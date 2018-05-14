@@ -51,7 +51,7 @@ class eight extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                8. Jag upplever att tydligheten från min närmsta chef är...
+                8. Hittills har ditt liv
             </Text>
             </View>
 
@@ -69,8 +69,8 @@ class eight extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'helt saknat mål och mening' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'genomgående haft mål \n och mening' : ' ' }
                 </Text>
             </View>
 

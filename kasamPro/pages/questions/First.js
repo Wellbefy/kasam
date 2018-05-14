@@ -12,12 +12,12 @@ import {data} from "../store";
 
 class First extends Component{
     sliderOptions = [
-        {value: 1, label: '1'},
-        {value: 2, label: '2'},
-        {value: 3, label: '3'},
-        {value: 4, label: '4'},
-        {value: 5, label: '5'},
-        {value: 6, label: '6',}
+        {value: 6, label: '1'},
+        {value: 5, label: '2'},
+        {value: 4, label: '3'},
+        {value: 3, label: '4'},
+        {value: 2, label: '5'},
+        {value: 1, label: '6',}
     ];
 
     constructor(props) {
@@ -60,7 +60,7 @@ class First extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.welcome}>
-                1. Jag upplever att min möjlighet att påverka är...
+                1. När du talar med människor, har du då en känsla av att de inte förstår dig ?
             </Text>
             </View>
 
@@ -78,8 +78,8 @@ class First extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Mycket små' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'har aldrig den känslan' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'har alltid den känslan' : ' ' }
                 </Text>
             </View>
 

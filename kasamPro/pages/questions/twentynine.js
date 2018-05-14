@@ -9,14 +9,14 @@ import {
 import {Fonts} from "../Fonts";
 import {data} from "../store";
 
-class six extends Component{
+class twentynine extends Component{
     sliderOptions = [
-        {value: 6, label: '1'},
-        {value: 5, label: '2'},
-        {value: 4, label: '3'},
-        {value: 3, label: '4'},
-        {value: 2, label: '5'},
-        {value: 1, label: '6',}
+        {value: 1, label: '1'},
+        {value: 2, label: '2'},
+        {value: 3, label: '3'},
+        {value: 4, label: '4'},
+        {value: 5, label: '5'},
+        {value: 6, label: '6',}
     ];
 
     constructor(props) {
@@ -37,7 +37,7 @@ class six extends Component{
         console.log("slidingComplete");
         console.log("item selected " + this.refs.slider.state.item);
         console.log("value " + this.sliderOptions[this.refs.slider.state.item].value);
-        data[5] = this.sliderOptions[this.refs.slider.state.item].value ;
+        data[28] = this.sliderOptions[this.refs.slider.state.item].value ;
         data.push() ;
         console.log(data);
     }
@@ -46,9 +46,9 @@ class six extends Component{
         const { currentItem } = this.state;
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
-            <Text style={styles.question}>
-                6. Har det hänt att människor som du litat på har gjort dig besviken ?
-            </Text>
+                <Text style={styles.question}>
+                    29. Hur ofta har du känslor som du inte är säker på att du kan kontrollera ?
+                </Text>
             </View>
 
             <SnapSlider
@@ -65,8 +65,8 @@ class six extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'har aldrig hänt' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'har hänt ofta' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'mycket ofta' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'mycket sällan/aldrig' : ' ' }
                 </Text>
             </View>
 
@@ -74,7 +74,7 @@ class six extends Component{
                 <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
-                            this.props.navigation.navigate('seven')}
+                            this.props.navigation.navigate('result')}
                         underlayColor='transparent'
                     >
                         <View style={styles.viewTouch1}>
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 28,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat
@@ -145,4 +145,4 @@ const styles = StyleSheet.create({
         width:220,
     }
 });
-export default six;
+export default twentynine;

@@ -47,7 +47,8 @@ class third extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                3. Trivsel på arbetsplatsen upplever jag är...
+                3. Tänk på de människor du kommer i kontakt med dagligen,
+                bortsett från dem som står dig närmast. Hur väl känner du de flesta av dem ?
             </Text>
             </View>
 
@@ -65,8 +66,8 @@ class third extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? ' Mycket dålig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket bra' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'tycker dom är främlingar' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'känner dem mycket väl' : ' ' }
                 </Text>
             </View>
 
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 24,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat

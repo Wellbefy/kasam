@@ -47,7 +47,7 @@ class twelve extends Component{
         return <View style={styles.container}>
             <View style={{height:240, flex:1}}>
             <Text style={styles.question}>
-                12.Min medvetenhet kring organisationens övergripande mål är...
+                12. Har du en känsla av att du befinner dig i en obekant situation och inte vet vad du ska göra ?
             </Text>
             </View>
 
@@ -65,8 +65,8 @@ class twelve extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'mycket ofta' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'mycket sällan/aldrig' : ' ' }
                 </Text>
             </View>
 
@@ -74,7 +74,7 @@ class twelve extends Component{
                 <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
-                            this.props.navigation.navigate('result')}
+                            this.props.navigation.navigate('thireteen')}
                         underlayColor='transparent'
                     >
                         <View style={styles.viewTouch1}>

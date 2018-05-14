@@ -47,7 +47,7 @@ class nine extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                9. Jag upplever att återkopplingen från min närmsta chef är...
+                9. Känner du dig orättvist behandlad ?
             </Text>
             </View>
 
@@ -65,8 +65,8 @@ class nine extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Helt obefintlig' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket stor' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'mycket ofta' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? ' mycket sällan/aldrig' : ' ' }
                 </Text>
             </View>
 

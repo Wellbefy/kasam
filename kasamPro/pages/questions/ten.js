@@ -51,7 +51,7 @@ class ten extends Component{
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
             <Text style={styles.question}>
-                10. Jag upplever att kunskapen kring mitt arbetsområde är...
+                10. De senaste tio åren har ditt liv varit
             </Text>
             </View>
 
@@ -69,8 +69,8 @@ class ten extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'Väldigt dålig, hade behövt mer \n kunskap/verktyg' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'Mycket bra' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'fullt av förändringar utan att du \n vetat vad som skulle hända härnäst' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'helt förutsägbart utan \n överaskande förändringar' : ' ' }
                 </Text>
             </View>
 

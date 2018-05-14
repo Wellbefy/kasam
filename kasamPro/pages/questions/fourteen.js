@@ -9,7 +9,7 @@ import {
 import {Fonts} from "../Fonts";
 import {data} from "../store";
 
-class six extends Component{
+class fourteen extends Component{
     sliderOptions = [
         {value: 6, label: '1'},
         {value: 5, label: '2'},
@@ -37,7 +37,7 @@ class six extends Component{
         console.log("slidingComplete");
         console.log("item selected " + this.refs.slider.state.item);
         console.log("value " + this.sliderOptions[this.refs.slider.state.item].value);
-        data[5] = this.sliderOptions[this.refs.slider.state.item].value ;
+        data[13] = this.sliderOptions[this.refs.slider.state.item].value ;
         data.push() ;
         console.log(data);
     }
@@ -46,9 +46,9 @@ class six extends Component{
         const { currentItem } = this.state;
         return <View style={styles.container}>
             <View style={{height:180, flex:1}}>
-            <Text style={styles.question}>
-                6. Har det hänt att människor som du litat på har gjort dig besviken ?
-            </Text>
+                <Text style={styles.question}>
+                    14. När du tänker på ditt liv, händer det ofta att du
+                </Text>
             </View>
 
             <SnapSlider
@@ -65,8 +65,8 @@ class six extends Component{
 
             <View style={{top: 50, flex:1}}>
                 <Text style={styles.choice}>
-                    { this.sliderOptions[currentItem].value === 1 ? 'har aldrig hänt' : ' ' &&
-                    this.sliderOptions[currentItem].value === 6 ? 'har hänt ofta' : ' ' }
+                    { this.sliderOptions[currentItem].value === 1 ? 'känner hur härligt det är att leva' : ' ' &&
+                    this.sliderOptions[currentItem].value === 6 ? 'frågar dig själv varför du finns till' : ' ' }
                 </Text>
             </View>
 
@@ -74,7 +74,7 @@ class six extends Component{
                 <View style={{top: 30,flex:1}}>
                     <TouchableOpacity
                         onPress={() =>
-                            this.props.navigation.navigate('seven')}
+                            this.props.navigation.navigate('fifteen')}
                         underlayColor='transparent'
                     >
                         <View style={styles.viewTouch1}>
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
 
     },
     question: {
-        fontSize: 30,
+        fontSize: 28,
         margin: 20,
         textAlign:'center',
         fontFamily: Fonts.Montserrat
@@ -145,4 +145,4 @@ const styles = StyleSheet.create({
         width:220,
     }
 });
-export default six;
+export default fourteen;
